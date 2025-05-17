@@ -1,11 +1,12 @@
 #declarando funçao
 def escolha_servico():
     while True:
-        print('DiG:')
-        print('ICO:')
-        print('IPB:')
-        print('FOT:')
-        servico = input('entre com o tipo de serviço desejado: ')
+        print("entre com o tipo de serviço desejado")
+        print('DiG-Digitaçao')
+        print('ICO-Impressão Colorida')
+        print('IPB-Impressão Preto e Branco')
+        print('FOT-Fotocópia')
+        servico = input()
         if servico == 'DIG':
             return 1.10
         elif servico == 'ICO':
@@ -15,7 +16,7 @@ def escolha_servico():
         elif servico == 'FOT':
             return 0.20
         else:
-            print('escolha inválida, entre com o tipo do serviço novamente: ')
+            print('escolha inválida, entre com o tipo do serviço novamente')
 
 
 def num_pagina():
@@ -39,7 +40,11 @@ def num_pagina():
 
 def servico_extra():
     while True:
-        adicional = int(input('deseja adicionar algum serviço?: '))
+        print("deseja adicionar algum serviço?")
+        print("1-Encardenação Simples- R$15.00")
+        print("2-Encardenação Capa Dura- R$40.00")
+        print("0-Não desejo mais nada")
+        adicional = int(input())
         if adicional == 1:
             return 15
         elif adicional == 2:
@@ -47,18 +52,16 @@ def servico_extra():
         elif adicional == 0:
             return 0
         else:
-            print('Não desejo mais nada: ')
+            break
 
 
 #programa principal
-def main():
-    print('Seja bem vindo a Copiadora da Rayssa Almeida')
-    valorserv = escolha_servico()
-    numeropagina = num_pagina()
-    extra = servico_extra()
-    total = (valorserv * numeropagina) + extra
-    print(' total: ' + str(total) + ' servico: ' + str(valorserv) + ' pagina: ' + str(numeropagina) + ' extra: ' + str(extra))
-    print('Obrigada, volte sempre!')
+print('Seja bem vindo a Copiadora da Rayssa Almeida')
+valorserv = escolha_servico()
+numeropagina = num_pagina()
+extra = servico_extra()
+total = (valorserv * numeropagina) + extra
+print(' total: ' + str(total) + ' (serviço: ' + str(valorserv) + ' * pagina: ' + str(numeropagina) + ' + extra: ' + str(extra) + ")")
+print('Obrigada, volte sempre!')
 #tive que usar a funçao str() , pois estava dando erro.
-if __name__ == "__main__":
-    main()
+

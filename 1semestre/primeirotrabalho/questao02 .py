@@ -1,4 +1,5 @@
 print('Seja bem vindo a açaiteria da Rayssa Almeida')
+print("--------------------Cardápio-------------------- \n------------------------------------------------ \n---| Tamanho  | Cupuaçu (CP)  |  Açaí (AC)  |--- \n---|    P     |   R$ 9.00     |  R$ 11.00   |--- \n---|    M     |   R$ 14.00    |  R$ 16.00   |--- \n---|    G     |   R$ 18.00    |  R$ 20.00   |--- \n------------------------------------------------ ")
 #variaveis
 sabor = 'sabor'
 tamanho = 'tamanho'

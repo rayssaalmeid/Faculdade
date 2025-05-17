@@ -1,4 +1,3 @@
-nome = input('qual é seu nome?: ')
 print('seja bem vindo a loja da rayssa almeida')
 #colocando as variaveis
 #decidi colocar int, estudo por fora..
@@ -29,4 +28,4 @@ else:
 
     print('valor SEM desconto: ', valorsomado)
     print('valor COM desconto: ', valorsomado - desconto)
-print('obrigada', nome ,'volte sempre!')
+print('obrigada,volte sempre!')
